@@ -10,10 +10,10 @@ const BottomBar = () => {
           <p className="text-sm font-medium">Home</p>
         </div>
       </div>
-      <div className="w-4 h-3 bg-gray-200 absolute -top-2 left-1/2 translate-x-[62px]"></div>
-      <div className="w-4 h-4 absolute -top-4 left-1/2 translate-x-[62px] rounded-bl-full bg-gray-50"></div>
-      <div className="w-4 h-3 bg-gray-200 absolute -top-2 right-1/2 -translate-x-[62px]"></div>
-      <div className="w-4 h-4 absolute -top-4 right-1/2 -translate-x-[62px] rounded-br-full bg-gray-50"></div>
+      <div className="w-4 h-3 bg-gray-200 absolute -top-2 left-1/2 translate-x-[60px]"></div>
+      <div className="w-4 h-4 absolute -top-4 left-1/2 translate-x-[60px] rounded-bl-full bg-gray-50"></div>
+      <div className="w-4 h-3 bg-gray-200 absolute -top-2 right-1/2 -translate-x-[60px]"></div>
+      <div className="w-4 h-4 absolute -top-4 right-1/2 -translate-x-[60px] rounded-br-full bg-gray-50"></div>
       <button className="h-14 w-1/4 bg-gradient-to-r from-emerald-400 to-cyan-400 absolute -top-7 left-1/2 -translate-x-1/2 rounded-full flex justify-center items-center border-[5px]">
         <p className="text-sm font-semibold text-white">Topup Saldo</p>
       </button>

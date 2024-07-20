@@ -64,9 +64,9 @@ const RegisterPage = () => {
           Sign Up With Google
         </button>
         <div className="w-full mt-5 text-center">
-          <Link href={"/sign-up"} className="text-sm font-medium">
+          <Link href={"/sign-in"} className="text-sm font-medium">
             Already have account?{" "}
-            <span className="text-blue-500 underline">Sign Up</span>
+            <span className="text-blue-500 underline">Sign In</span>
           </Link>
         </div>
       </form>

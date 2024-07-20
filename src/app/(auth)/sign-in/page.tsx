@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React, { useState } from "react";
 import { Eye, EyeOff, Lock, Mail } from "react-feather";
 
@@ -6,12 +7,12 @@ const LoginPage = () => {
   const [type, setType] = useState<string>("password");
 
   return (
-    <div className="w-full h-screen py-20 px-4">
+    <div className="w-full h-screen py-20 px-10">
       <h1 className="text-2xl font-bold">Welcome Back</h1>
       <p className="text-sm font-medium">
         Please enter the available fields to continue
       </p>
-      <div className="mt-20 w-full">
+      <form className="mt-20 w-full">
         <p className="text-sm font-medium text-gray-400">Email</p>
         <div className="relative border-b w-full mt-2">
           <div className="w-8 absolute top-1/2 -translate-y-1/2 flex justify-center items-center">
@@ -41,7 +42,29 @@ const LoginPage = () => {
             type={type}
           />
         </div>
-      </div>
+        <div className="w-full flex justify-end items-center my-4">
+          <Link href={"/"}>
+            <span className="text-sm font-medium">Forgot Password?</span>
+          </Link>
+        </div>
+        <button className="w-full bg-black text-white py-2 text-sm">
+          Sign In
+        </button>
+        <div className="w-full flex justify-center gap-5 items-center my-8">
+          <div className="w-2/5 h-[1px] bg-gray-300"></div>
+          <p className="text-xs font-medium">OR</p>
+          <div className="w-2/5 h-[1px] bg-gray-300"></div>
+        </div>
+        <button className="w-full bg-white text-black border py-2 text-sm">
+          Sign In With Google
+        </button>
+        <div className="w-full mt-5 text-center">
+          <Link href={"/sign-up"} className="text-sm font-medium">
+            Dont have account yet?{" "}
+            <span className="text-blue-500 underline">Sign Up</span>
+          </Link>
+        </div>
+      </form>
     </div>
   );
 };
